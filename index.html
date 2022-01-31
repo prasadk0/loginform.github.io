@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        :root{
+    --primary:#933ded;
+    --dark:#232323;
+    --pure:#fff;
+    --smoke:whitesmoke;
+    --dark-gray:#999;
+}
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: var(--primary);
+
+        }
+        body{
+            background-color: var(--dark);
+            color: var(--primary);
+            display: grid;
+            place-items: center;
+            width: 1200px;
+        max-width: 90%;
+        align-items: center;
+        margin: 0 auto;
+        color: var(--primary);
+
+        }
+        .container{
+            display: flex;
+            margin: 5rem auto;
+            padding: 3rem 5rem;
+            color: var(--primary);
+
+         
+
+        }
+     
+        a:hover{
+            color: var(--primary);
+        }
+        img{
+            height: 270px;
+        }
+        .img{
+            width: 100%;
+        }
+        .text{
+        text-align: center;
+        line-height: 2rem;
+        color: var(--primary);
+
+
+        }
+        .item{
+            font-size: 1rem;
+            word-spacing: 1px;
+            color: var(--primary);
+
+            display: flex;
+            margin: 2rem auto;
+            justify-content:space-between;
+
+        }
+        input{
+            outline: none;
+            /* border: black; */
+            border: 2px solid black;
+            border-radius: 3px;
+            line-height: 2rem;
+            font-size: 1rem;
+            color: #232323;
+            transition: all .3s ease-in-out;
+        }
+        h1{
+            /* text-shadow: 2px 2px 2px whitesmoke; */
+        }
+        input:hover{
+            border-color:    var(--primary);
+            transform: rotateZ(1deg);
+            /* background-color: rgb(214, 206, 191); */
+           
+
+        }
+       .item button{
+            padding: 8px 16px;
+            margin-left: 10px;
+            color: black;
+            background-color:white;
+            border-radius: 3px;
+            outline: none;
+        transition: all .5s ease-in-out;
+        border:2px solid black;
+        cursor: pointer;
+
+        }
+       .item button:hover{
+            background-color:var(--primary);
+            color: whitesmoke;
+            transform: rotateZ(3deg);
+            border-color: var(--pure);
+        }
+       .item a{
+            color: var(--primary);
+
+            /* color:var(--dark); */
+            margin-right: 10px;
+            padding: 8px 16px;
+            text-rendering: optimizeSpeed;
+            transition: all .1s ease-in-out;
+        }a:hover{
+            color: var(--smoke);
+        }
+      
+       .text1{
+           text-align: center;
+       }
+       .container{
+              box-shadow: 10px 10px 10px var(--dark-gray);
+             
+          }
+       @media (max-width:712px) {
+           .container{
+               display: block;
+               padding: 0 0;
+           
+           }
+          img{
+            height: 293px;
+            width: 100%;
+          }
+          .container{
+          box-shadow: none;
+             
+          }
+          .form{
+           padding: 0;
+       }
+       
+           
+       }
+       .form{
+           padding: 2rem;
+       }
+       strong{
+           text-align: center;
+       }
+     
+     
+.home{
+      /* display: grid; */
+      width: 1200px;
+        max-width: 90%;
+        width: 80%;
+        /* align-content: center;
+         justify-content: center;  */
+        margin:0 auto ;
+      display: flex;
+      /* align-items: center; */
+      justify-content: space-between;
+      align-items: center;
+      /* place-items: center; */
+    
+
+      }
+      .home .btn1 a{
+          text-decoration: none;
+          color: white;
+        font-family: sans-serif;
+      }
+      .home .btn1{
+          margin: 2rem auto;
+          font-family: sans-serif;
+          background-color: var(--primary);
+          color: var(--pure);
+          transition: all .5s ease-in-out;
+          padding: 0.88rem 1rem;
+          border: 2px solid transparent;
+          outline: none;
+          font-weight: 900;
+          font-size: 1rem;
+          border-radius: 3px;
+          
+      }
+      .home .btn1:hover{
+        background-color: var(--dark);
+        border-color: white;
+      }
+     
+     
+    </style>
+</head>
+<body>
+    <div class="home">
+        <button class="btn1"><a href="index.html">Home</a></button>
+        <button class="btn1 btn7">HOME</button>
+      </div>
+    <div class="container">
+      
+        <div class="form">
+          <h1>  <strong>Login Form</strong></h1>
+           <div class="item">
+            <div class="text text1">E-MAIL:</div>
+            <div class="input"><input type="text" ></div>
+           </div>
+           <div class="item">
+            <div class="text">PASSWORD: </div>
+            <div class="input"><input type="password" ></div>
+           </div>
+           <div class="item">
+            <button>Login</button> <a href="">Forget Password</a>
+        </div>
+        </div>
+        <div class="img">
+            <img src="pic1.png" alt="">
+        </div>
+       
+    </div>
+</body>
+</html>
